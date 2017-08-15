@@ -9,26 +9,28 @@ import os, sys, shutil
 
 class Category():
 	# Keynote category
+	pass
 
 class SubCategory():
 	# Keynote subcategory
+	pass
 
 
 def openCreate ():
 	# Opens or creates keynote file
-	keyNoteFile = open(str(input('Enter Keynote File: ')), 'r+')
+	keyNoteFile = open(str(input('Enter Keynote File: ')), 'w+')
+	return(keyNoteFile)
 	# Choose to locate existing file to edit
 	# Create new file
 
-def writeKeynotes ():
+def writeKeynotes (keysfile):
 	#Write or update changes to file
-	KeyNoteFile.write('TEST')
-	KeyNoteFile.close()
+	keysfile.write('TEST')
+	keysfile.close()
 
 def categoryEdit ():
 	# Create or edit keynote hierarchy
+	pass
 
-
-
-
-
+keysfile = openCreate()
+writeKeynotes(keysfile)
